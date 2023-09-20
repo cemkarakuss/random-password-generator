@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="card-generator">
+      <div class="password">
+        <h1 class="pswrd">1adsFVSD^'^%'^%</h1>
+        <button class="copy-btn"><i class="fa-solid fa-copy"></i></button>
+      </div>
+  
+      <div class="inputs">
+        <div class="check-div">
+          <label for="upper">Büyük Harf</label>
+          <input type="checkbox" name="upper" id="upper" checked>
+        </div>
+        <div class="check-div">
+          <label for="lower">Küçük Harf</label>
+          <input type="checkbox" name="lower" id="lower" checked>
+        </div>
+        <div class="check-div">
+          <label for="number">Sayı</label>
+          <input type="checkbox" name="number" id="number">
+        </div>
+        <div class="check-div">
+          <label for="special">Özel Karakter</label>
+          <input type="checkbox" name="special" id="special">
+        </div>
+      </div>
+      <div class="slider">
+        <input type="range" name="length" id="slider" value="0" min="0" max="sliderMax">
+        <h1 class="value">0</h1>
+      </div>
+      <div class="button">
+        <button class="btn-rndm">Password Generate</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="app/app.js"></script>
+</body>
+</html>
